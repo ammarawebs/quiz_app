@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quiz_app_main{
+  /* position: relative; */
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+
 }
 
-.App-link {
-  color: #61dafb;
+.quiz_app_second_main{
+  /* margin-top: 30vh; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.app_box{
+  border: 5px solid rgb(206, 206, 206);
+  border-radius: 20px;
+  width: 800px;
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 60px 60px 60px;
+  box-shadow: 10px 10px 50px rgba(200, 200, 200, 0.6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.question{
+  align-self: flex-start;
+}
+.timer{
+  align-self: flex-end;
+
+}
+.app_quizes{
+  border:5px solid rgb(204, 204, 204);
+  width: 100%;
+  height: 300px;
+  border-radius: 30px ;
+  padding: 20px 20px;
+
+  /* overflow-y: scroll; */
+  
+}
+.buttons{
+  margin-top: 30px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.form_btn{
+  font-size: 22px;
+  padding: 5px 30px;
+  border-radius:10px;
+  cursor: pointer;
+}
+.radio_btn{
+  cursor: pointer;
+}
+
+.start_btn{
+  width: 100%;
+  align-self: center;
+  font-size: 22px;
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+
+@media only screen and (max-width: 980px){
+  .app_box{
+    border: 5px solid rgb(206, 206, 206);
+    border-radius: 20px;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px 60px 60px;
+    box-shadow: 10px 10px 50px rgba(200, 200, 200, 0.6);
   }
-  to {
-    transform: rotate(360deg);
+  .quiz_app_second_main{
+    /* margin-top: 30vh; */
+
+    width: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .buttons{
+    margin-top: 30px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .app_box{
+    border: 5px solid rgb(206, 206, 206);
+    border-radius: 20px;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px 60px 60px;
+    box-shadow: 10px 10px 50px rgba(200, 200, 200, 0.6);
+    font-size: 15px;
+  }
+  .quiz_app_second_main{
+    /* margin-top: 30vh; */
+
+    width: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .buttons{
+    margin-top: 30px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .app_quizes{
+    border:5px solid rgb(204, 204, 204);
+    width: 100%;
+    height: 300px;
+    border-radius: 30px ;
+    padding: 20px 20px;
+    font-size: 20px;
+  
+    /* overflow-y: scroll; */
+    
+  }
+
+
+}
+
+@media only screen and (max-width: 770px){
+
+  .app_box{
+    border: 5px solid rgb(206, 206, 206);
+    border-radius: 20px;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px 60px 60px;
+    box-shadow: 10px 10px 50px rgba(200, 200, 200, 0.6);
+    font-size: 12px;
+  }
+  .app_quizes{
+    border:5px solid rgb(204, 204, 204);
+    width: 100%;
+    height: 300px;
+    border-radius: 30px ;
+    padding: 20px 20px;
+    font-size: 15px;
+  
+    /* overflow-y: scroll; */
+    
   }
 }
